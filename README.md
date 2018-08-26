@@ -6,6 +6,11 @@
 Juan Pablo Calad Henao
 
 
+### Get the project
+
+> User$ git clone https://github.com/caladdd/Minesweeper.git
+
+
 ### Running
 
 You must have Java JDK 8 and build-essential(make) because we going to use them to build and run our project

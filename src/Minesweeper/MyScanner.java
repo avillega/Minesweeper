@@ -32,21 +32,21 @@ public class MyScanner {
             if(inputs.length == 3) {
                 if(CheckInt(inputs[0]) && CheckInt(inputs[1]) && CheckInt(inputs[2])) {
                     if(getInt(inputs[0])<=0 || getInt(inputs[1])<=0) {
-                        System.out.println("You entered an incorrect dimension for the board");
+                        System.out.println("You entered an incorrect dimension for the board, try again!");
                     }
                     else {
                         if(getInt(inputs[2]) <= getInt(inputs[0])*getInt(inputs[1]))
                             rightFormat = true;
                         else
-                            System.out.println("You entered more mines than the size of the board");
+                            System.out.println("You entered more mines than the size of the board, try again!");
                     }
                 }
                 else {
-                    System.out.println("wrong format");
+                    System.out.println("wrong format, try again!");
                 }
             }
             else{
-                System.out.println("wrong input");
+                System.out.println("wrong input, try again!");
             }
         }
         input[0] = Integer.parseInt(inputs[0]);
@@ -74,20 +74,20 @@ public class MyScanner {
                     int y = getInt(inputs[1]);
                     if(getChar(inputs[2])=='U' || getChar(inputs[2])=='M')
                         if(x <= 0 || x > xLimit || y <= 0 || y > yLimit ) {
-                            System.out.println("You entered a wrong coordinate");
+                            System.out.println("You entered a wrong coordinate, try again!");
                         }
                         else {
                             rightFormat = true;
                         }
                     else
-                        System.out.println("You entered a wrong type of input");
+                        System.out.println("You entered a wrong type of input, try again!");
                 }
                 else {
-                    System.out.println("wrong format");
+                    System.out.println("wrong format, try again!");
                 }
             }
             else{
-                System.out.println("wrong input");
+                System.out.println("wrong input, try again!");
             }
         }
         inpu = new StandardInput(Integer.parseInt(inputs[0]), Integer.parseInt(inputs[1]), inputs[2]); 

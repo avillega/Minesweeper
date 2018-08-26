@@ -68,7 +68,7 @@ public class MyBoard{
         }
         else {
             if(gFlag==flag) {
-                System.out.println("Ganaste");
+                System.out.println("You Won!");
                 return true;
             }
         }
@@ -120,14 +120,14 @@ public class MyBoard{
                 screen.updateScreen(board);
                 amountAvCell = mw.getAmountAvCell();
                 if(amountAvCell == amMine) {
-                    System.out.println("Ganaste");
+                    System.out.println("You Won!");
                     return true;
                 }
             }
         }
         else if (type.charAt(0) == 'U' && mine[y][x]) {
             screen.failedBoard(board, mine);
-            System.out.println("Perdiste");
+            System.out.println("You Lost!");
             return true;
         }
         return false;

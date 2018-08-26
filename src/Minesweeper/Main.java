@@ -14,6 +14,7 @@ public class Main {
         MyScanner scanner = new MyScanner();
         
         // Read initial input
+        System.out.println("Enter the dimension of the board and the number of mines");
         int[] initialInput = scanner.initialInput();
         MyBoard board = new MyBoard(initialInput[0], initialInput[1], initialInput[2]);
         

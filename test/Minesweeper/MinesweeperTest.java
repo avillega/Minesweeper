@@ -1,16 +1,13 @@
 package Minesweeper;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
+import org.junit.Test;
 
-import org.junit.jupiter.api.Test;
 
-class MinesweeperTest {
+public class MinesweeperTest {
 
-	/**
-	 * Test method for {@link Minesweeper.Minesweeper#eval(char[][], boolean[][], int, int)}.
-	 */
 	@Test
-	void testEval1() {
+	public void testEval1() {
 		Minesweeper minesweeper = new Minesweeper(16);
 		char[][] initialBoard = {{'.','.','.','.'}, {'.','.','.','.'}, {'.','.','.','.'}, {'.','.','.','.'}};
 		char[][] finalBoard = {{'1','.','.','.'}, {'.','.','.','.'}, {'.','.','.','.'}, {'.','.','.','.'}};
@@ -27,7 +24,7 @@ class MinesweeperTest {
 	}
 	
 	@Test
-	void testEval2() {
+	public void testEval2() {
 		Minesweeper minesweeper = new Minesweeper(16);
 		char[][] initialBoard = {{'.','.','.','.'}, {'.','.','.','.'}, {'.','.','.','.'}, {'.','.','.','.'}};
 		char[][] finalBoard = {{'2','.','.','.'}, {'.','.','.','.'}, {'.','.','.','.'}, {'.','.','.','.'}};
@@ -44,7 +41,7 @@ class MinesweeperTest {
 	}
 	
 	@Test
-	void testEval3() {
+	public void testEval3() {
 		Minesweeper minesweeper = new Minesweeper(16);
 		char[][] initialBoard = {{'.','.','.','.'}, {'.','.','.','.'}, {'.','.','.','.'}, {'.','.','.','.'}};
 		char[][] finalBoard = {{'-','-','1','.'}, {'-','-','1','.'}, {'1','1','3','.'}, {'.','.','.','.'}};
@@ -61,7 +58,7 @@ class MinesweeperTest {
 	}
 	
 	@Test
-	void testEval4() {
+	public void testEval4() {
 		Minesweeper minesweeper = new Minesweeper(16);
 		char[][] initialBoard = {{'1','.','.','.'}, {'.','.','.','.'}, {'1','2','.','.'}, {'-','1','.','.'}};
 		char[][] finalBoard = {{'1','.','1','-'}, {'.','.','1','-'}, {'1','2','3','2'}, {'-','1','.','.'}};

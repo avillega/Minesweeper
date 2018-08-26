@@ -15,7 +15,7 @@ You must have Java JDK 8 and build-essential(make) because we going to use them 
  > User$ sudo apt-get install build-essential
 
 
-Now you can use make commands. Now you can use the follow make parameters
+Now you can use make commands. Now you can use the following make parameters
 
 - **without parameter**: the project is going to be compiled.
 - **run**: once compiled you are able to run the project.
